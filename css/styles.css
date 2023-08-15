@@ -26,3 +26,22 @@ body {
     box-sizing: border-box;
 }
 
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .gallery img {
+        width: 50%; /* 2 images per row */
+    }
+    .sidebar h2 {
+        font-size: 18px; /* Reduce font size for h2 on tablets */
+    }
+
+    .sidebar label {
+        font-size: 12px; /* Reduce font size for labels on tablets */
+    }
+}
+
