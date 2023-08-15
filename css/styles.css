@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.sidebar {
+    width: 15%;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.sidebar label{
+    display: block;
+}
+
+.gallery {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 33%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
