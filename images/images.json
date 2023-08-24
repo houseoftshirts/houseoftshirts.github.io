@@ -1,5 +1,5 @@
 {
-    "boys": ["image5.jpeg"],
+    "boys": ["image1.jpeg","image2.jpeg","image3.jpeg","image4.jpeg","image5.jpeg"],
     "girls": ["image1.jpeg"],
     "images": ["boys/image1.jpeg", "girls/image1.jpeg","boys/image2.jpeg", "girls/image2.jpeg","boys/image3.jpeg", "girls/image3.jpeg","boys/image4.jpeg", "girls/image4.jpeg","boys/image5.jpeg", "girls/image5.jpeg","girls/image6.jpeg","girls/image7.jpeg","girls/image8.jpeg","girls/image9.jpeg","girls/image10.jpeg"]
 }
