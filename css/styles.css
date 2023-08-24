@@ -33,7 +33,7 @@ body {
 
 @media (max-width: 767px) {
     .gallery img {
-        width: 50%; /* 2 images per row */
+        width: 100%; /* 1 images per row */
     }
     .sidebar h2 {
         font-size: 18px; /* Reduce font size for h2 on tablets */
