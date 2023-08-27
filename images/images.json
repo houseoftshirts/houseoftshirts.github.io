@@ -1,6 +1,92 @@
 {
-    "boys": ["image4.jpeg","image5.jpeg"],
-    "girls": ["glove.jpeg","G-T_0006.jpeg","G-T_0002.jpeg","G-T-0015.jpeg","G-T-0016.jpeg"],
-    "images": ["boys/image4.jpeg", "girls/glove.jpeg","boys/image5.jpeg", "girls/G-T_0006.jpeg", "girls/G-T_0002.jpeg", "girls/G-T-0015.jpeg", "girls/G-T-0016.jpeg"]
+    "boys": [
+        { "filename": "images/boys/B-TS_0005.jpeg", "price": "Rs 200" },
+        { "filename": "images/boys/B-TS_0006.jpeg", "price": "Rs 200" },
+        { "filename": "images/boys/B-TS_0008.jpeg", "price": "Rs 250" },
+        { "filename": "images/boys/B-P_0002.jpeg", "price": "Rs 200" },
+        { "filename": "images/boys/B-P_0004.jpeg", "price": "Rs 200" }
+    ],
+    "girls": [
+        { "filename": "images/girls/G-TS_0001.jpeg", "price": "Rs 200" },
+        { "filename": "images/girls/G-T_0002.jpeg", "price": "Rs 300" },
+        { "filename": "images/girls/G-TS_0006.jpeg", "price": "Rs 220" },
+        { "filename": "images/girls/G-T-0015.jpeg", "price": "Rs 200" },
+        { "filename": "images/girls/G-T-0016.jpeg", "price": "Rs 200" },
+        { "filename": "images/girls/G-P_0003.jpeg", "price": "Rs 200" },
+        { "filename": "images/girls/G-P_0002.jpeg", "price": "Rs 200" },
+        { "filename": "images/girls/G-P_0001.jpeg", "price": "Rs 200" },
+        { "filename": "images/girls/G-P_0006.jpeg", "price": "Rs 200" },
+        { "filename": "images/girls/G-P_0008.jpeg", "price": "Rs 180" },
+        { "filename": "images/girls/G-P_0009.jpeg", "price": "Rs 180" },
+	{ "filename": "images/girls/G-P_00010.jpeg", "price": "Rs 180" },
+	{ "filename": "images/girls/G-P_00011.jpeg", "price": "Rs 180" },
+	{ "filename": "images/girls/G-P_00012.jpeg", "price": "Rs 180" },
+        { "filename": "images/girls/G-P_00014.jpeg", "price": "Rs 190" },
+        { "filename": "images/girls/G-TSK_0001.jpeg", "price": "Rs 350" },
+        { "filename": "images/girls/G-TSK_0002.jpeg", "price": "Rs 350" },
+        { "filename": "images/girls/G-S_0005.jpeg", "price": "Rs 350" }
+    ],
+    "btops": [
+        { "filename": "images/boys/B-TS_0005.jpeg", "price": "Rs 200" },
+        { "filename": "images/boys/B-TS_0006.jpeg", "price": "Rs 200" },
+        { "filename": "images/boys/B-TS_0008.jpeg", "price": "Rs 250" }
+    ],
+    "bbottoms": [
+        { "filename": "images/boys/B-P_0002.jpeg", "price": "Rs 200" },
+        { "filename": "images/boys/B-P_0004.jpeg", "price": "Rs 200" }
+    ],
+    "images": [
+        { "filename": "images/girls/G-TS_0001.jpeg", "price": "Rs 200" },
+        { "filename": "images/girls/G-T_0002.jpeg", "price": "Rs 300" },
+        { "filename": "images/girls/G-TS_0006.jpeg", "price": "Rs 220" },
+        { "filename": "images/girls/G-T-0015.jpeg", "price": "Rs 200" },
+        { "filename": "images/girls/G-T-0016.jpeg", "price": "Rs 200" },
+        { "filename": "images/girls/G-P_0003.jpeg", "price": "Rs 200" },
+        { "filename": "images/girls/G-P_0002.jpeg", "price": "Rs 200" },
+        { "filename": "images/girls/G-P_0001.jpeg", "price": "Rs 200" },
+        { "filename": "images/girls/G-P_0006.jpeg", "price": "Rs 200" },
+        { "filename": "images/girls/G-P_0008.jpeg", "price": "Rs 180" },
+        { "filename": "images/girls/G-P_0009.jpeg", "price": "Rs 180" },
+	{ "filename": "images/girls/G-P_00010.jpeg", "price": "Rs 180" },
+	{ "filename": "images/girls/G-P_00011.jpeg", "price": "Rs 180" },
+	{ "filename": "images/girls/G-P_00012.jpeg", "price": "Rs 180" },
+        { "filename": "images/girls/G-P_00014.jpeg", "price": "Rs 190" },
+        { "filename": "images/girls/G-TSK_0001.jpeg", "price": "Rs 350" },
+        { "filename": "images/girls/G-TSK_0002.jpeg", "price": "Rs 350" },
+        { "filename": "images/girls/G-S_0005.jpeg", "price": "Rs 350" },
+        { "filename": "images/boys/B-TS_0005.jpeg", "price": "Rs 200" },
+        { "filename": "images/boys/B-TS_0006.jpeg", "price": "Rs 200" },
+        { "filename": "images/boys/B-TS_0008.jpeg", "price": "Rs 250" },
+        { "filename": "images/boys/B-P_0002.jpeg", "price": "Rs 200" },
+        { "filename": "images/boys/B-P_0004.jpeg", "price": "Rs 200" }
+    ],
+    "gtops": [
+        { "filename": "images/girls/G-TS_0001.jpeg", "price": "Rs 200" },
+        { "filename": "images/girls/G-T_0002.jpeg", "price": "Rs 300" },
+        { "filename": "images/girls/G-TS_0006.jpeg", "price": "Rs 220" },
+        { "filename": "images/girls/G-T-0015.jpeg", "price": "Rs 200" },
+        { "filename": "images/girls/G-T-0016.jpeg", "price": "Rs 200" }
+    ],
+    "gbottoms": [
+        { "filename": "images/girls/G-P_0003.jpeg", "price": "Rs 200" },
+        { "filename": "images/girls/G-P_0002.jpeg", "price": "Rs 200" },
+        { "filename": "images/girls/G-P_0001.jpeg", "price": "Rs 200" },
+        { "filename": "images/girls/G-P_0006.jpeg", "price": "Rs 200" },
+        { "filename": "images/girls/G-P_0008.jpeg", "price": "Rs 180" },
+        { "filename": "images/girls/G-P_0009.jpeg", "price": "Rs 180" },
+	{ "filename": "images/girls/G-P_00010.jpeg", "price": "Rs 180" },
+	{ "filename": "images/girls/G-P_00011.jpeg", "price": "Rs 180" },
+	{ "filename": "images/girls/G-P_00012.jpeg", "price": "Rs 180" },
+        { "filename": "images/girls/G-P_00014.jpeg", "price": "Rs 190" }
+    ],
+    "gsets": [
+        { "filename": "images/girls/G-TSK_0001.jpeg", "price": "Rs 350" },
+        { "filename": "images/girls/G-TSK_0002.jpeg", "price": "Rs 350" },
+        { "filename": "images/girls/white.jpeg", "price": "" }
+    ],
+    "gskirts": [
+        { "filename": "images/girls/G-S_0005.jpeg", "price": "Rs 350" },
+        { "filename": "images/girls/white.jpeg", "price": "" },
+        { "filename": "images/girls/white.jpeg", "price": "" }
+    ]
 }
-

@@ -7,20 +7,60 @@
     <title>Image Gallery</title>
 </head>
 <body>
-    <div class="sidebar">
-        <img src="logo.png" alt="House Of Tshirts Logo" class="logo">
-            <h2>Filters:</h2>
-        <label>
-            <input type="checkbox" id="boysFilter" onchange="applyFilters()"> Boys
-        </label>
-        <label>
-            <input type="checkbox" id="girlsFilter" onchange="applyFilters()"> Girls
-        </label>
-    </div>
-    <div class="gallery" id="imageGallery">
-        <!-- Images will be displayed here -->
-    </div>
-    <script src="js/script.js"></script>
+<div class="container">
+<div class="sidebar">
+    <img src="logo.png" alt="House Of Tshirts Logo" class="logo">
+    <h2>Filters</h2>
+    <ul>
+        <li>
+            <input type="checkbox" id="girlsFilter" onchange="applyFilters_g()">
+            <label for="girlsFilter">Girls</label>
+            <ul>
+                <li>
+                    <input type="checkbox" id="girlsTops" onchange="applyFilters_gt()">
+                    <label for="age2to3">Tops</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="girlsBottoms" onchange="applyFilters_gb()">
+                    <label for="age2to3">Bottoms</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="girlsSets" onchange="applyFilters_gs()">
+                    <label for="age2to3">Sets</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="girlsSkirts" onchange="applyFilters_gsk()">
+                    <label for="age2to3">Skirts</label>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <input type="checkbox" id="boysFilter" onchange="applyFilters_b()">
+            <label for="boysFilter">Boys</label>
+            <ul>
+                <li>
+                    <input type="checkbox" id="boysTops" onchange="applyFilters_bt()">
+                    <label for="age2to3">Tops</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="boysBottoms" onchange="applyFilters_bb()">
+                    <label for="age2to3">Bottoms</label>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="gallery" id="imageGallery">
+<!-- Images will be displayed here -->
+</div>
+
+<div id="modal" class="modal" onclick="closeModal()">
+<div id="modal-content" class="modal-content"></div>
+</div>
+</div>
+
+
+<script src="js/script.js"></script>
 </body>
 </html>
 
