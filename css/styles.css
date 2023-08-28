@@ -93,12 +93,12 @@ body {
     }
 
     .sidebar {
-        width: 20%;
+        width: 25%;
         padding: 10px;
     }
 
     .gallery {
-        width: 80%;
+        width: 75%;
     }
 }
 
