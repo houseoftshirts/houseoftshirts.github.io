@@ -82,7 +82,7 @@ body {
 
     .sidebar ul {
         margin: unset; /* Reduce font size for h2 on tablets */
-        padding-left: 5px;
+        padding-left: 7px;
     }
 
     .sidebar label {
