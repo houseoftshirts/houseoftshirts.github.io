@@ -86,7 +86,7 @@ body {
     }
 
     .sidebar label {
-        font-size: 10px; /* Reduce font size for labels on tablets */
+        font-size: 8px; /* Reduce font size for labels on tablets */
     }
     .image-container {
         width: 100%;
