@@ -83,14 +83,23 @@ body {
 
     .sidebar ul {
         margin: unset; /* Reduce font size for h2 on tablets */
-        padding: unset;
+        padding-left: 7px;
     }
 
     .sidebar label {
-        font-size: 12px; /* Reduce font size for labels on tablets */
+        font-size: 8px; /* Reduce font size for labels on tablets */
     }
     .image-container {
         width: 100%;
+    }
+
+    .sidebar {
+        width: 25%;
+        padding: 10px;
+    }
+
+    .gallery {
+        width: 75%;
     }
 }
 
