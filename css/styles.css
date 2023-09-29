@@ -72,6 +72,22 @@ body {
     max-width: 98%;
     max-height: 90vh;
 }
+ul {
+    padding-inline-start: 5px;
+    font-size: 10px;
+}
+
+.cat_title {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.price-label,
+#remove {
+	display:none;
+}
 
 @media (max-width: 767px) {
     .gallery img {

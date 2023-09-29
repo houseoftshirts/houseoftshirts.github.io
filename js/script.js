@@ -8,6 +8,8 @@ function applyFilters() {
     var girlsSets = document.getElementById("girlsSets");
     var girlsSkirts = document.getElementById("girlsSkirts");
     var imageGallery = document.getElementById("imageGallery");
+	var girls02 = document.getElementById("girls02");
+	
     var images = [];
 
     console.log("Boys Filter Checked:", boysFilter.checked);
@@ -29,22 +31,24 @@ function applyFilters() {
 
     var selectedImagesData = [];
 
-       if(girlsTops.checked){
-                girlsFilter.checked = true;
-		selectedImagesData = selectedImagesData.concat(imagesData["gtops"]);
-       }
-       if(girlsBottoms.checked){
-                girlsFilter.checked = true;
-		selectedImagesData = selectedImagesData.concat(imagesData["gbottoms"]);
-       }
-       if(girlsSets.checked){
-                girlsFilter.checked = true;
-		selectedImagesData = selectedImagesData.concat(imagesData["gsets"]);
-       }
-       if(girlsSkirts.checked){
-                girlsFilter.checked = true;
-		selectedImagesData = selectedImagesData.concat(imagesData["gskirts"]);
-       }
+		if(girlsTops.checked || girlsBottoms.checked || girlsSets.checked || girlsSkirts.checked){
+			girlsFilter.checked = true;
+			if(girlsTops.checked){
+				selectedImagesData = selectedImagesData.concat(imagesData["gtops"]);
+			}
+			if(girlsBottoms.checked){
+				selectedImagesData = selectedImagesData.concat(imagesData["gbottoms"]);
+			}
+			if(girlsSets.checked){
+				selectedImagesData = selectedImagesData.concat(imagesData["gsets"]);
+			}
+			if(girlsSkirts.checked){
+				selectedImagesData = selectedImagesData.concat(imagesData["gskirts"]);
+			}
+			girls02.checked = false;
+		} 
+
+	   
        if(!girlsTops.checked && !girlsBottoms.checked && !girlsSets.checked && !girlsSkirts.checked){
            girlsFilter.checked = false;
        }
@@ -62,6 +66,63 @@ function applyFilters() {
        }
 
        if (!boysFilter.checked && !girlsFilter.checked) {
+            selectedImagesData = imagesData["girls"].concat(imagesData["boys"]);
+       }
+
+
+    console.log("Selected Images Data:", selectedImagesData);
+
+    renderImages(imageGallery, selectedImagesData);
+}
+
+function applyFilters_age() {
+    var boysFilter = document.getElementById("boysFilter");
+    var boysTops = document.getElementById("boysTops");
+    var boysBottoms = document.getElementById("boysBottoms");
+    var girlsFilter = document.getElementById("girlsFilter");
+    var girlsTops = document.getElementById("girlsTops");
+    var girlsBottoms = document.getElementById("girlsBottoms");
+    var girlsSets = document.getElementById("girlsSets");
+    var girlsSkirts = document.getElementById("girlsSkirts");
+    var imageGallery = document.getElementById("imageGallery");
+	var girls02 = document.getElementById("girls02");
+    var images = [];
+
+    console.log("Boys Filter Checked:", boysFilter.checked);
+    console.log("Girls Filter Checked:", girlsFilter.checked);
+
+    // Fetch images data from JSON file
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "images/images.json", false);
+    xhr.send(null);
+
+    if (xhr.status === 200) {
+        imagesData = JSON.parse(xhr.responseText);
+    }
+
+    console.log("Boys Filter Checked:", boysFilter.checked);
+    console.log("Girls Filter Checked:", girlsFilter.checked);
+    console.log("Boys tops Checked:", boysTops.checked);
+    console.log("Girls bottoms Checked:", boysBottoms.checked);
+
+    var selectedImagesData = [];
+
+		if(girls02.checked){
+			girlsFilter.checked = true;
+			selectedImagesData = selectedImagesData.concat(imagesData["g02"]);
+			
+			girlsTops.checked = false;
+			girlsBottoms.checked = false;
+			girlsSets.checked = false;
+			girlsSkirts.checked = false;
+		}
+
+	   
+       if(!girls02.checked){
+           girlsFilter.checked = false;
+       }
+	   
+	  if (!boysFilter.checked && !girlsFilter.checked) {
             selectedImagesData = imagesData["girls"].concat(imagesData["boys"]);
        }
 

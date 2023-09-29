@@ -12,10 +12,12 @@
     <img src="logo.png" alt="House Of Tshirts Logo" class="logo">
     <h2>Filters</h2>
     <ul>
+		<h2>Girls</h2>
         <li>
             <input type="checkbox" id="girlsFilter" onchange="applyFilters_g()">
-            <label for="girlsFilter">Girls</label>
+            <label for="girlsFilter">All Girls</label>
             <ul>
+			    <label class="cat_title">Shop By Category</label>
                 <li>
                     <input type="checkbox" id="girlsTops" onchange="applyFilters()">
                     <label for="girlsSet">Tops</label>
@@ -33,11 +35,32 @@
                     <label for="girlsSkirts">Skirts</label>
                 </li>
             </ul>
+			<ul id="remove">
+			    <label class="cat_title">Shop By Age</label>
+                <li>
+                    <input type="checkbox" id="girls02" onchange="applyFilters_age()">
+                    <label for="girls02">0 - 2 Years</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="girls24" onchange="applyFilters_age()">
+                    <label for="girls24">2 - 4 Years</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="girls46" onchange="applyFilters_age()">
+                    <label for="girls46">4 - 6 Years</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="girls68" onchange="applyFilters_age()">
+                    <label for="girls68">6 - 8 Years</label>
+                </li>
+            </ul>
         </li>
+		<h2>Boys</h2>
         <li>
             <input type="checkbox" id="boysFilter" onchange="applyFilters_b()">
-            <label for="boysFilter">Boys</label>
+            <label for="boysFilter">All Boys</label>
             <ul>
+				<label class="cat_title">Shop By Category</label>
                 <li>
                     <input type="checkbox" id="boysTops" onchange="applyFilters()">
                     <label for="boysTops">Tops</label>
@@ -45,6 +68,17 @@
                 <li>
                     <input type="checkbox" id="boysBottoms" onchange="applyFilters()">
                     <label for="boysBottoms">Bottoms</label>
+                </li>
+            </ul>
+			<ul  id="remove">
+				<label class="cat_title">Shop By Age</label>
+                <li>
+                    <input type="checkbox" id="boys02" onchange="applyFilters()">
+                    <label for="boys02">0 - 2 Years</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="boys24" onchange="applyFilters()">
+                    <label for="boys24">2 - 4 Years</label>
                 </li>
             </ul>
         </li>
